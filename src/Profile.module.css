@@ -1,0 +1,88 @@
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Roboto Mono', monospace;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #161b22;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid #30363d;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #58a6ff;
+  box-shadow: 0 0 15px #58a6ff;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 10px #58a6ff; }
+  50% { box-shadow: 0 0 20px #58a6ff; }
+  100% { box-shadow: 0 0 10px #58a6ff; }
+}
+
+.title {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  color: #2fb97d;
+  text-shadow: 0 0 5px #2fb97d;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #8b949e;
+}
+
+.sectionTitle {
+  border-bottom: 2px solid #30363d;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  color: #58a6ff;
+}
+
+.skillList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skillItem {
+  background-color: #21262d;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #30363d;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
